@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-side"></div> <!-- Empty container on the left side -->
+
+        <div class="right-side">
+            <div class="widget1 tabs-widget left1">
+                <div class="tabs">
+                    <button class="tab-button tab_button1 active" onclick="showTab('about')">About Me</button>
+                    <button class="tab-button tab_button1" onclick="showTab('experiences')">Experiences</button>
+                    <button class="tab-button tab_button1" onclick="showTab('recommended')">Recommended</button>
+                </div>
+                <div class="tab-content active" id="about">
+
+                    <p>Hello! I’m Dave, your sales rep here from Salesforce. I’ve been working at this awesome company
+                        for 3 years now.
+
+                        I was born and raised in Albany, NY& have been living in Santa Carla for the past 10 years my
+                        wife Tiffany and my 4 year old twin daughters- Emma and Ella. Both of them are just starting
+                        school, so my calender is usually blocked between 9-10 AM. This is a your chance to collect the
+                        information effectively...</p>
+
+                </div>
+                <div class="tab-content" id="experiences">
+                    <p>Experience details will be here.</p>
+                </div>
+                <div class="tab-content" id="recommended">
+                    <p>Recommended content will be here.</p>
+                </div>
+            </div>
+            <div class="hpp1">
+                <div class="gallery-container">
+
+                    <div class="gallery-header">
+                        <button class="gallery-button" onclick="showGallery()">Gallery</button>
+                        <div class="navclick">
+                            <button class="add-image-button" onclick="addImage()"><span class="textbtn">+
+                                    ADD IMAGE</span></button>
+                            <button class="gallery-nav left-arrow" onclick="prevImage()"><img src="Group 28.png"
+                                    alt=""></button>
+    
+                            <button class="gallery-nav right-arrow" onclick="nextImage()"><img src="Group 28 (1).png"
+                                    alt="">;</button>
+                        </div>
+    
+                    </div>
+                    <div class="gallery-images" id="gallery-images">
+                        <div class=" imgbox"> <img src="download.jpeg" class="gallery-img  " alt="Gallery Image"></div>
+                        <div class=" imgbox"> <img src="download (1).jpeg" class="gallery-img  " alt="Gallery Image"></div>
+                        <div class=" imgbox"> <img src="download (2).jpeg" class="gallery-img  " alt="Gallery Image"></div>
+    
+                    </div>
+                </div>
+    
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
